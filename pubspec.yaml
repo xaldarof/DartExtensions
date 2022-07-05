@@ -1,7 +1,7 @@
 name: kfextensions
-description: A new Flutter project.
+description: Extensions for Dart that doesn't exist, but exist in Kotlin
 version: 0.0.1
-homepage:
+homepage: https://github.com/xaldarof/DartExtensions
 
 environment:
   sdk: ">=2.17.1 <3.0.0"
