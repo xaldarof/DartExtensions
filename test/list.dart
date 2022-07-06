@@ -33,3 +33,12 @@ extension ListLastIndex<T> on List<T> {
     return length - 1;
   }
 }
+
+extension MapIndexed<T> on List<T> {
+  List<T> mapIndexed({required T Function(T item, int index) onEach}) {
+    for (int i = 0; i < length - 1; i++) {
+      this[i] = onEach(this[i], i);
+    }
+    return this;
+  }
+}

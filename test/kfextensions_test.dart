@@ -45,5 +45,14 @@ void main() {
       var result = text.lastIndex();
       expect(result, 2);
     });
+
+    test("map_indexed", () {
+      var result = [1, 2, 3].mapIndexed(onEach: (item, index) {
+        return item = item * item;
+      });
+
+      expect(result[1], 4);
+
+    });
   });
 }
