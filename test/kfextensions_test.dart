@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
+import 'core.dart';
 import 'list.dart';
 import 'string.dart';
 
@@ -53,6 +54,18 @@ void main() {
 
       expect(result[1], 4);
 
+    });
+
+    test("return_true_on_null", () {
+      List<String>? result;
+
+      expect(true, result.isNull());
+    });
+
+    test("return_false_on_null", () {
+      List<String> result  = [];
+
+      expect(false, result.isNull());
     });
   });
 }
