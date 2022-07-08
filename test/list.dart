@@ -28,6 +28,18 @@ extension ListRemove<T> on List<T> {
   }
 }
 
+extension ListReverse<T> on List<T> {
+  List<T> reverse() {
+    var reversed = <T>[];
+
+    for (int i = length-1; i>=0; i--) {
+      reversed.add(this[i]);
+    }
+
+      return reversed;
+  }
+}
+
 extension ListLastIndex<T> on List<T> {
   int lastIndex() {
     return length - 1;

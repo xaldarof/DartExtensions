@@ -13,7 +13,7 @@ void main() {
         return element % 2 == 0;
       });
 
-      expect(filtered.length, 2);
+      expect(2,filtered.length);
     });
 
     test("removeIf_extension", () {
@@ -23,28 +23,28 @@ void main() {
         return element > 2;
       });
 
-      expect(filtered.length, 2);
+      expect(2,filtered.length);
     });
 
     test("nullIf_extension(with text)", () {
       var text = "Hello";
 
       var result = text.nullIfEmpty();
-      expect(result, text);
+      expect(text,result);
     });
 
     test("nullIf_extension(without text)", () {
       var text = " ";
 
       var result = text.nullIfEmpty();
-      expect(result, null);
+      expect(null,result);
     });
 
     test("last_index", () {
       var text = [1, 2, 3];
 
       var result = text.lastIndex();
-      expect(result, 2);
+      expect(2,result);
     });
 
     test("map_indexed", () {
@@ -52,20 +52,26 @@ void main() {
         return item = item * item;
       });
 
-      expect(result[1], 4);
+      expect(4,result[1]);
 
     });
 
     test("return_true_on_null", () {
       List<String>? result;
 
-      expect(true, result.isNull());
+      expect(result.isNull(),true);
     });
 
     test("return_false_on_null", () {
       List<String> result  = [];
 
-      expect(false, result.isNull());
+      expect(result.isNull(),false);
+    });
+
+    test("reverse_list", () {
+      List<String> list  = ["a","b","c"];
+
+      expect(list.reverse(),["c","b","a"]);
     });
   });
 }
