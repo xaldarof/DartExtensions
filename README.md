@@ -1,4 +1,7 @@
 
+
+I am making extensions that doesn't exist in Dart, but exist in Kotlin. I think it will useful for Android Developers that migrated to Flutter.
+
 ## Example tests for list extensions
 ```dart
 
