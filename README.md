@@ -80,7 +80,7 @@ void main() {
 ```
 
 
-#Example tests for string extensions
+## Example tests for string extensions
 ```dart
 extension ReturnNullIfEmpty on String {
   String? nullIfEmpty() {
